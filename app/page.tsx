@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+
 export default function Home() {
   return (
     <div className="flex justify-center h-screen ">
@@ -18,8 +19,9 @@ export default function Home() {
               <p className="text-[20px] pb-4">Takeaway</p>
             </div>
 
-            <div className="flex items-end justify-center bg-neutral-400 w-[150px] h-[150px] rounded-lg">
-              <p className="text-[20px] pb-4">Delivery</p>
+            <div className="flex flex-col items-center justify-center bg-neutral-400 w-[150px] h-[150px] rounded-lg">
+              <Image src='/delivery.png' height={800} width={800} alt="delivery" />
+              <p className="text-[20px]">Delivery</p>
             </div>
 
           </div>
