@@ -18,12 +18,12 @@ export default function Home() {
           <div className="flex gap-8 justify-center mt-[102px] ">
             <Link href='/build-pancake' >
               <div className="flex flex-col items-center justify-center bg-neutral-400 w-[150px] h-[150px] rounded-lg">
-                <Image src='/takeaway.png' height={800} width={800} alt="delivery" />
+                <Image src='/delivery.png' height={800} width={800} alt="delivery" />
                 <p className="text-[20px]">Takeaway</p>
               </div>
             </Link>
 
-            <Link href='/nuild' >
+            <Link href='/build-pancake' >
               <div className="flex flex-col items-center justify-center bg-neutral-400 w-[150px] h-[150px] rounded-lg">
                 <Image src='/delivery.png' height={800} width={800} alt="delivery" />
                 <p className="text-[20px]">Delivery</p>
