@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -15,14 +16,19 @@ export default function Home() {
           </div>
 
           <div className="flex gap-8 justify-center mt-[102px] ">
-            <div className="flex items-end justify-center bg-neutral-400 w-[150px] h-[150px] rounded-lg">
-              <p className="text-[20px] pb-4">Takeaway</p>
-            </div>
+            <Link href='/build-pancake' >
+              <div className="flex flex-col items-center justify-center bg-neutral-400 w-[150px] h-[150px] rounded-lg">
+                <Image src='/takeaway.png' height={800} width={800} alt="delivery" />
+                <p className="text-[20px]">Takeaway</p>
+              </div>
+            </Link>
 
-            <div className="flex flex-col items-center justify-center bg-neutral-400 w-[150px] h-[150px] rounded-lg">
-              <Image src='/delivery.png' height={800} width={800} alt="delivery" />
-              <p className="text-[20px]">Delivery</p>
-            </div>
+            <Link href='/nuild' >
+              <div className="flex flex-col items-center justify-center bg-neutral-400 w-[150px] h-[150px] rounded-lg">
+                <Image src='/delivery.png' height={800} width={800} alt="delivery" />
+                <p className="text-[20px]">Delivery</p>
+              </div>
+            </Link>
 
           </div>
 
